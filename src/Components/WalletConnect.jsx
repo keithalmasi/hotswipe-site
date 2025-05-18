@@ -1,20 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
-export default function WalletConnect({ onConnect }) {
-  async function connectPhantom() {
-    try {
-      const resp = await window.solana.connect()
-      onConnect(resp.publicKey.toString())
-    } catch (err) {
-      alert('Failed to connect Phantom wallet')
-    }
-  }
-
+const WalletConnect = () => {
   return (
-    <div style={{ textAlign: 'center', margin: '20px 0' }}>
-      <button onClick={connectPhantom} style={{ padding: '10px 20px', fontSize: 16 }}>
-        Connect Phantom Wallet
-      </button>
+    <div className="flex justify-center mt-6">
+      <WalletMultiButton />
     </div>
-  )
-}
+  );
+};
+
+export default WalletConnect;
+

@@ -2,3 +2,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  @apply bg-transparent;
+}
+body, html {
+  position: relative;
+}
+/* in index.css or global.css */
+.wallet-top-right {
+  position: absolute !important;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  background: red !important; /* temporary debug */
+}
+
+.wallet-top-right .wallet-adapter-button {
+  margin: 0 !important;
+  display: inline-flex !important;
+  justify-content: flex-end !important;
+  width: auto !important;
+  align-self: flex-end !important;
+}
