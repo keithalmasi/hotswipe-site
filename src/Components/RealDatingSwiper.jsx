@@ -15,7 +15,7 @@ const RealDatingSwiper = () => {
         name: 'Eva',
         age: 27,
         bio: 'Web3 artist & gamer girl 🎮',
-        image: '/public/images/profile-luna.png',
+        image: '/public/images/luna-profile.png',
       },
       {
         id: 2,
