@@ -1,1 +1,8 @@
 node_modules/
+/dist
+*.DS_Store
+git rm -r --cached dist
+git rm --cached public/.DS_Store
+git commit -am "Ignore dist/ and DS_Store"
+git push origin main
+
